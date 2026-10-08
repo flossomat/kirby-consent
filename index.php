@@ -12,6 +12,7 @@ Kirby::plugin('dasformt/consent', [
         'privacyUrl' => '',
         'privacyLabel' => 'Datenschutz',
         'settingsLabel' => 'Datenschutz-Einstellungen',
+        'position' => 'left',
         'labels' => [
             'acceptAll' => 'Alle akzeptieren',
             'necessary' => 'Nur notwendige',

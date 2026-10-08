@@ -27,6 +27,7 @@ Kategorien in `site/config/config.php` unter `dasformt.consent`. Texte, Speicher
 ```php
 'dasformt.consent.storageKey' => 'projekt-consent',
 'dasformt.consent.version' => 1,
+'dasformt.consent.position' => 'right', // left | center | right
 'dasformt.consent.categories' => [
     'maps' => [
         'label' => 'Karten',

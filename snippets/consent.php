@@ -28,6 +28,12 @@ foreach ($categories as $id => $category) {
     ];
 }
 
+$position = strtolower((string)option('dasformt.consent.position', 'left'));
+
+if (!in_array($position, ['left', 'center', 'right'], true)) {
+    $position = 'left';
+}
+
 $config = [
     'storageKey' => (string)option('dasformt.consent.storageKey', 'dasformt-consent'),
     'version' => (int)option('dasformt.consent.version', 1),
@@ -38,7 +44,7 @@ $config = [
 
 <div class="consent" id="consent" hidden>
     <div
-        class="consent-banner"
+        class="consent-banner consent-banner--<?= esc($position) ?>"
         role="dialog"
         aria-labelledby="consent-title"
         aria-describedby="consent-text"
