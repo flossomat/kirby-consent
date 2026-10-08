@@ -1,0 +1,19 @@
+{
+    "name": "dasformt/kirby-consent",
+    "description": "Einwilligung mit Platzhalter für externe Dienste in Kirby",
+    "type": "kirby-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dasformt",
+            "email": "info@dasformt.de",
+            "homepage": "https://dasformt.de"
+        }
+    ],
+    "require": {
+        "getkirby/composer-installer": "^1.2"
+    },
+    "extra": {
+        "installer-name": "kirby-consent"
+    }
+}
